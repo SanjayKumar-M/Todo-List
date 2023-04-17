@@ -1,0 +1,62 @@
+*{
+    color: rgb(96, 9, 237);
+}
+.container{
+    align-items:center;justify-content: center;
+    margin-right: 15px;
+}
+.ip{
+
+    
+    justify-content:center;
+    align-items: center;
+    display: grid;
+}
+.tb{
+    justify-content:center;
+    align-items: center;
+    display: grid;
+    height: 20vh;
+}
+tr th{
+    padding-left: 20px;
+}
+table tbody{
+    padding-left: 20px;
+}
+.ip input{
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.ip button{
+    padding: 5px;
+    border-radius: 50px;
+    border-color: none;
+    cursor: pointer;
+    border-style:groove;
+    background-color:rgb(235, 224, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
