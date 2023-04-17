@@ -6,6 +6,7 @@ const Todo = () => {
     const [todos, setTodos] = useState([]);
     const [editingIndex, setEditingIndex] = useState(-1);
     const [progress, setProgress] = useState([]);
+    const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 
     const handleAdd = () => {
         if (task) {
@@ -60,8 +61,8 @@ const Todo = () => {
                     </thead>
                     <tbody>
                         {todos.map((todo, index) => (
-                            <tr key={index} className={`row ${progress[index]}`}>
-                                <td>
+                            <tr key={index} className={`row ${progress[index]}`} style={{ backgroundColor: randomColor }}>
+                                <td >
                                     {editingIndex === index ? (
                                         <input type='text' value={todo} onChange={(e) => setTodos(todos.map((t, i) => i === index ? e.target.value : t))} />) : (
                                         todo
